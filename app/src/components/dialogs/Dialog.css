@@ -1,0 +1,41 @@
+.portal {
+    position: absolute;
+    background-color: #232323;
+    margin-top: 5rem;
+    top: 2rem;
+    left: 25%;
+    width: auto;
+    z-index: 1;
+}
+
+.add-button {
+    width: 7rem;
+    height: 2rem;
+    padding: 0.5rem;
+    color: #F65261;
+    margin-left: auto; 
+    margin-right: 0;
+    right: 0;
+    float: right;
+    border: 0;
+    background-color: #424242;
+}
+.add-button:hover {
+    background-color: #232323;
+}
+.close-dialog {
+    position: relative;
+    float: right; 
+    margin-right: 1rem;
+    margin-top: 1rem;
+    color: #fff;
+    background-color: #424242;
+    border: 0;
+    font-size: larger;
+}
+.dialog-title {
+    text-transform: uppercase;
+    font-size: x-large;
+    color: #fff;
+    padding-left: 2rem;
+}

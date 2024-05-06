@@ -1,0 +1,32 @@
+
+.dropdown-container {
+    position: absolute;
+    display: inline-block;
+    right: 0.4em;
+}
+
+.dropdown-content {
+    position: relative;
+    margin-top: 1rem;
+    background-color: #424242;
+    min-width: 160px;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content span {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-option:hover {background-color: #F65261}
+
+.close-button {
+    text-align: right;
+}
+.dropdown-option {
+    cursor: -webkit-grab; cursor: grab;
+}

@@ -1,0 +1,119 @@
+#movieform{
+    width: 80%;
+    max-width: 60rem;
+    min-width: 40rem;
+    height: 42rem;
+}
+.movie-form-first-column{
+    width: 55%;
+    display: inline-block;
+    position: relative;
+    padding: 2rem;
+}
+.movie-form-second-column{
+    width: 25%;
+    display: inline-block;
+    position: relative;
+    padding: 2rem;
+}
+.movie-form-label{
+    width: 100%;
+    padding-bottom: 0.5rem;
+    padding-top: 1rem;
+    text-transform: uppercase;
+    color: #F65261;
+}
+.movie-form-input{
+    width: 100%;
+    height: 2rem;
+    background-color: #424242;
+    border: 0;
+    color: #fff;
+    padding-left: 0.5rem;
+    font-size: medium;
+}
+.movie-form-textarea-column{
+    width: calc(100%-4rem);
+    padding: 2rem;
+}
+.movie-form-textarea{
+    height: auto;
+}
+.movie-form-control-column{
+    width: calc(100%-4rem);
+    padding: 2rem;
+}
+.movie-form-button{
+    float: right;
+    text-transform: uppercase;
+    width: 20%;
+    padding: 1rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    margin: 1rem;
+    font-size: large;
+}
+.movie-form-reset-button{
+    background-color: #232323;
+    border: #F65261 2px solid;
+    color: #F65261;
+}
+.movie-form-submit-button{
+    background-color: #F65261;
+    border: #F65261 2px solid;
+    color: #fff;
+
+}
+.movie-form-genre-input {
+    width: calc(100% + 0.6rem) !important;
+    position: initial !important;
+    background-color: #424242 !important;
+    border: 0 !important;
+    border-radius: 0% !important;
+    color: #fff;
+    padding: 0rem !important;
+}
+
+.rmsc {
+    --rmsc-main: #F65261 !important;
+    --rmsc-hover: #232323 !important;
+    --rmsc-selected: #424242 !important;
+    --rmsc-border: #ccc;
+    --rmsc-gray: #aaa;
+    --rmsc-bg: #424242 !important;
+    --rmsc-p: 10px; /* Spacing */
+    --rmsc-radius: 4px; /* Radius */
+    --rmsc-h: 38px; /* Height */
+  }
+  .react-datepicker__navigation{
+    background-color: #424242 !important;
+    color: #fff;
+    padding: 0.3rem;
+  }
+  .react-datepicker__year--container{
+    background-color: #424242 !important;
+    color: #fff;
+  }
+  .react-datepicker{
+    background-color: #424242 !important;
+    color: #fff;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+
+  }
+  .react-datepicker-year-header{
+    display: none;
+  }
+  .react-datepicker__aria-live{
+    display: none;
+  }
+
+  .error-label{
+    color: red;
+  }
+
+  .error-text{
+    color: red;
+    padding-left: 1rem;
+  }

@@ -1,0 +1,29 @@
+.selected {
+    border-bottom: 4px solid #F65261 !important;
+    margin-bottom: -4px;
+  }
+
+.genre-button {
+  display: block;
+  color: white;
+  text-transform: uppercase;
+  background-color: #232323;
+  text-align: center;
+  padding: 14px;
+  padding-right: 16px;
+  float: left;
+  border-width: 0;
+  border-bottom: 4px solid #555555;
+  height: 100%;
+}
+
+.genre-select button:hover {
+  background-color: #424242;
+}
+
+.genre-select {
+  height: 100%;
+  width: 70%;
+  display: inline-block;
+}
+

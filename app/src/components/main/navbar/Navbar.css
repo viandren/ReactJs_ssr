@@ -1,0 +1,6 @@
+.navbar {
+  height: 10%;
+  width: calc(100% - 3rem);
+  padding-left: 3rem;
+  background-color: #232323;
+}

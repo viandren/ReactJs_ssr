@@ -1,0 +1,53 @@
+.poster {
+    width: 100%;
+}
+.movie-tile {
+    padding-top: 3rem;
+    padding-right: 3rem;
+    color: #FFFFFF;
+    width: 25%;
+    display: inline-block;
+    position: relative;
+}
+.title-row {
+    width: 100%;
+    padding: 1rem;;
+}
+.title {
+    display: inline-block;
+    width: 70%;
+    font-size: large;
+
+}
+.release-year {
+    display: inline-block;
+    border-radius: 3px;
+    border: #555555 solid 1px;
+    padding: 0.2rem 0.8rem;
+}
+.genres {
+    padding: 1rem;
+    color: #555555;
+}
+
+
+.movie-tile:hover .context-icon {
+    position: absolute;
+    background: #3F3C53;
+    width: 2rem;
+    height: 2rem;
+    color: white;
+    border-radius: 50%;
+    margin: 1rem;
+    right: 4rem;
+}
+.movie-tile:hover .context-icon:after {
+    content: '•••';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(90deg);
+    font-size: 12px; 
+    letter-spacing: 2px;
+    margin-top: 2px;
+  }

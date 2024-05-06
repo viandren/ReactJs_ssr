@@ -1,0 +1,54 @@
+.movie-details {
+    height: 100%;
+    background-color: #232323;
+    width: calc(100% - 6rem);
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.details-poster {
+    padding-right: 2rem;
+    padding-top: 4rem;
+    display: inline-block;
+    max-height: 80%;
+}
+
+.details-box {
+    display: inline-block;
+    width: 65%;
+
+    padding-top: 4rem;
+    vertical-align: top;
+}
+.details-title-row {
+    color: #FFF;
+}
+.details-title {
+    display: inline-block;
+    padding-right: 2rem;
+    font-size: larger;
+}
+.details-rating {
+    display: inline-block;
+}
+
+.details-genres {
+    padding-top: 0.5rem;
+    color: #FFF;
+}
+.duration-row {
+    padding-top: 0.5rem;
+    color: #F65261;
+}
+.details-release-year {
+    display: inline-block;
+    padding-right: 2rem;
+}
+.details-duration {
+    display: inline-block;
+}
+.details-description {
+    color: #555;
+    padding-top: 0.5rem;
+    font-size: large;
+}

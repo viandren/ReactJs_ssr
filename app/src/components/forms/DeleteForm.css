@@ -1,0 +1,27 @@
+#deleteform{
+    width: 80%;
+    max-width: 60rem;
+    min-width: 40rem;
+    height: 10rem;
+}
+.delete-form-submit-button{
+    float: right;
+    text-transform: uppercase;
+    width: 20%;
+    padding: 1rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    margin: 1rem;
+    font-size: large;
+    background-color: #F65261;
+    border: #F65261 2px solid;
+    color: #fff;
+}
+.delete-form-title{
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: large;
+}

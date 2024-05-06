@@ -1,0 +1,32 @@
+.sort-control {
+    display: inline-block;
+    vertical-align: top;
+
+  color: white;
+  text-transform: uppercase;
+  background-color: #232323;
+  text-align: center;
+  height: 100%;
+  font-size: large;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-right: 3rem;
+}
+.sort-title {
+    display: inline-block;
+    padding: 1rem;
+    color: #555555;
+}
+.sort-select {
+    display: inline-block;
+    padding: 0.4rem;
+    background-color: #232323;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: large;
+
+}
+.sort-select:focus {
+    border: none;
+}

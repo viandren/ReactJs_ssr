@@ -1,0 +1,72 @@
+[{
+    "id": "0",
+    "imageUrl": "https://cdn.europosters.eu/image/1300/posters/the-lord-of-the-rings-the-return-of-the-king-i104633.jpg",
+    "title": "Lord of the rings",
+    "releaseYear": "2003",
+    "genres": ["Fantasy", "Adventure"],
+    "rating": "9.0",
+    "duration": "3h 21min",
+    "description": "Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring."
+},
+{
+    "id": "1",
+    "imageUrl": "https://m.media-amazon.com/images/M/MV5BZmI1ZGRhNDYtOGVjZC00MmUyLThlNTktMTQyZGE3MzE1ZTdlXkEyXkFqcGdeQXVyNDE5MTU2MDE@._V1_.jpg",
+    "title": "Resident evil",
+    "releaseYear": "2002",
+    "genres": ["Horror"],
+    "rating": "6.6",
+    "duration": "1h 40min",
+    "description": "A special military unit fights a powerful, out-of-control supercomputer and hundreds of scientists who have mutated into flesh-eating creatures after a laboratory accident."
+},
+{
+    "id": "2",
+    "imageUrl": "https://i.ebayimg.com/images/g/XJoAAOSwFbxjvAGi/s-l1200.jpg",
+    "title": "Raiders of the lost ark",
+    "releaseYear": "1981",
+    "genres": ["Adventure"],
+    "rating": "8.4",
+    "duration": "1h 55min",
+    "description": "In 1936, archaeologist and adventurer Indiana Jones is hired by the U.S. government to find the Ark of the Covenant before the Nazis can obtain its awesome powers."
+},
+{
+    "id": "3",
+    "imageUrl": "https://m.media-amazon.com/images/I/51dcaJOAfrL._AC_UF894,1000_QL80_.jpg",
+    "title": "Fahrenheit 9/11",
+    "releaseYear": "2004",
+    "genres": ["Documentary"],
+    "rating": "7.5",
+    "duration": "2h 2min",
+    "description": "Michael Moore's view on what happened to the United States after September 11 and how the Bush Administration allegedly used the tragic event to push forward its agenda for unjust wars in Afghanistan and Iraq."
+},
+{
+    "id": "4",
+    "imageUrl": "https://m.media-amazon.com/images/I/51IsxUU6jiL._AC_UF894,1000_QL80_.jpg",
+    "title": "Pandorum",
+    "releaseYear": "2009",
+    "genres": ["Sci-fi", "Horror"],
+    "rating": "6.7",
+    "duration": "1h 48min",
+    "description": "Two crew members of a spaceship wake up from hypersleep to discover that all their colleagues are missing. Despite this, it appears that they are not alone."
+},
+{
+    "id": "5",
+    "imageUrl": "https://i.ebayimg.com/images/g/PZQAAOSwNRdX4fqQ/s-l1600.jpg",
+    "title": "Avengers",
+    "releaseYear": "2012",
+    "genres": ["Action", "Comedy"],
+    "rating": "8.0",
+    "duration": "2h 23min",
+    "description": "Earth's mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity."
+},
+{
+    "id": "6",
+    "imageUrl": "https://m.media-amazon.com/images/I/51URq2GUSaL._AC_UF894,1000_QL80_.jpg",
+    "title": "Troy",
+    "releaseYear": "2002",
+    "genres": ["Adventure", "Drama"],
+    "rating": "7.3",
+    "duration": "2h 43min",
+    "description": "An adaptation of Homer's great epic, the film follows the assault on Troy by the united Greek forces and chronicles the fates of the men involved."
+}
+]
+
