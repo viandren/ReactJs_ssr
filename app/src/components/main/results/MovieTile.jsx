@@ -44,8 +44,8 @@ export default function MovieTile(props) {
     const dialogForDeleting = <Dialog closeDialog={closeDeleteDialog} title="Delete movie" 
     children={<DeleteForm onSubmit={() => {props.deleteMovie(props.movie);closeDeleteDialog();}}/>} dialogIsOpen={deleteDialogIsOpen}></Dialog>;
 
-    const portalForEditing = ReactDOM.createPortal( dialogForEditing, document.body);
-    const portalForDeleting = ReactDOM.createPortal( dialogForDeleting, document.body);
+    //const portalForEditing = ReactDOM.createPortal( dialogForEditing/*, document.body*/);
+    //const portalForDeleting = ReactDOM.createPortal( dialogForDeleting/*, document.body*/);
 
     let dropdownContent = showDropdown ? <DropDown closeDropdown={setShowDropdown} editMove={props.editMove} 
     movie={props.movie} openDialog={openDialog} openDeleteDialog={openDeleteDialog}/> : ""
@@ -59,12 +59,10 @@ export default function MovieTile(props) {
 
 return (
     <>
-    {portalForDeleting}
-    {portalForEditing}
     <div className="movie-tile" data-testid="movieTile" onClick={onTileClick}> 
         <div className="context-icon" onClick={(event) => {event.stopPropagation();setShowDropdown(!showDropdown);}}></div>
         {dropdownContent}
-        <img className="poster" src={props.movie.poster_path} alt=""
+        <img className="poster" src={props.movie.poster_path} alt="image not found"
         onError={({ currentTarget }) => {
             currentTarget.onerror = null; // prevents looping
             currentTarget.src="https://www.popcorn.app/assets/app/images/placeholder-movieimage.png";

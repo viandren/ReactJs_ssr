@@ -38,6 +38,7 @@ export default function Main(props) {
     <Results setSelectedMovieId={props.setSelectedMovieId}
             searchByTitle={props.searchByTitle}
           editMovie={props.editMovie}
-          deleteMovie={props.deleteMovie}/>
+          deleteMovie={props.deleteMovie}
+          movieList={props.movieList}/>
     </div>;
 }

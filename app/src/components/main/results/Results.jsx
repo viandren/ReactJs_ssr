@@ -37,19 +37,19 @@ export default function Results(props) {
     return response.data;
     
   }
-
+/*
   const {  isLoading, isError, data } = useQuery(['data', sortBy, filterByGenre, query], fetchData);
 
   
   if (isLoading) return "Loading...";
-  if (isError) return "An error has occurred.";
+  if (isError) return "An error has occurred.";*/
   
 
-  if (data !== undefined) {
+  if (props.movieList !== undefined) {
     return (
         <div className="results" data-testid="results">
-        {data.data.map(function(movie, i){
-        return  <MovieTile movie={data.data[i]} setSelectedMovieId={props.setSelectedMovieId} key={i} 
+        {props.movieList.data.map(function(movie, i){
+        return  <MovieTile movie={props.movieList.data[i]} setSelectedMovieId={props.setSelectedMovieId} key={i} 
         editMovie={props.editMovie} deleteMovie={props.deleteMovie}/>;})
         }
         </div>

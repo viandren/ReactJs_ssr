@@ -36,7 +36,8 @@ function App() {
           <Main 
           searchByTitle={searchByTitle}
           editMovie={editMovie}
-          deleteMovie={deleteMovie}/>
+          deleteMovie={deleteMovie}
+          movieList={movieListData}/>
       </div>
     </QueryClientProvider>
 }
