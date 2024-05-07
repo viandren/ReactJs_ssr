@@ -1,5 +1,8 @@
 .poster {
     width: 100%;
+    height: 400px;
+    background-image: url('/placeholder-movieimage.png');
+    background-size: cover;
 }
 .movie-tile {
     padding-top: 3rem;

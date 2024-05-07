@@ -50,6 +50,6 @@ export default function Header(props) {
 
             {searchIcon}
         </div>
-        <MovieDetails />
+        <MovieDetails movie={props.movie} />
         </div>;
 }
