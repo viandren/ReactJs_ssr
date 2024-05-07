@@ -62,8 +62,6 @@ export const loader = async ({ request, params, context }: LoaderArgs) => {
         queryString += '&searchBy=title&search=' + searchParams.get('query');
     }
     console.log('query: ' + queryString)
-    //const response1 = await axios.get('http://localhost:4000/movies?' + queryString);
-    //const response2 = await axios.get('http://localhost:4000/movies/' + params.movieId );
     const [response1, response2] = await Promise.all([
       axios.get('http://localhost:4000/movies?' + queryString),
       axios.get('http://localhost:4000/movies/' + params.movieId ),
