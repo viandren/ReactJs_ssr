@@ -7,8 +7,9 @@ import { useState } from "react";
 import Dialog from '../../dialogs/Dialog.jsx';
 import MovieForm from '../../forms/MovieForm.jsx';
 import DeleteForm from '../../forms/DeleteForm.jsx';
-import ReactDOM from 'react-dom';
 import { useLocation, useNavigate } from 'react-router-dom';
+import { redirect } from '@remix-run/node';
+import { Link } from "@remix-run/react";
 
 export default function MovieTile(props) {
 
@@ -44,8 +45,8 @@ export default function MovieTile(props) {
     const dialogForDeleting = <Dialog closeDialog={closeDeleteDialog} title="Delete movie" 
     children={<DeleteForm onSubmit={() => {props.deleteMovie(props.movie);closeDeleteDialog();}}/>} dialogIsOpen={deleteDialogIsOpen}></Dialog>;
 
-    const portalForEditing = ReactDOM.createPortal( dialogForEditing, document.body);
-    const portalForDeleting = ReactDOM.createPortal( dialogForDeleting, document.body);
+    //const portalForEditing = ReactDOM.createPortal( dialogForEditing/*, document.body*/);
+    //const portalForDeleting = ReactDOM.createPortal( dialogForDeleting/*, document.body*/);
 
     let dropdownContent = showDropdown ? <DropDown closeDropdown={setShowDropdown} editMove={props.editMove} 
     movie={props.movie} openDialog={openDialog} openDeleteDialog={openDeleteDialog}/> : ""
@@ -59,22 +60,16 @@ export default function MovieTile(props) {
 
 return (
     <>
-    {portalForDeleting}
-    {portalForEditing}
-    <div className="movie-tile" data-testid="movieTile" onClick={onTileClick}> 
+    <Link to={"/"+props.movie.id} className="movie-tile" data-testid="movieTile" onClick={redirect('/login')}> 
         <div className="context-icon" onClick={(event) => {event.stopPropagation();setShowDropdown(!showDropdown);}}></div>
         {dropdownContent}
-        <img className="poster" src={props.movie.poster_path} alt=""
-        onError={({ currentTarget }) => {
-            currentTarget.onerror = null; // prevents looping
-            currentTarget.src="https://www.popcorn.app/assets/app/images/placeholder-movieimage.png";
-          }}/>
+        <div className="poster" style={{ backgroundImage: 'url("' + props.movie.poster_path + '"), url("/placeholder-movieimage.png")', backgroundSize: 'cover' }}></div>
         <div className="title-row">
             <div className="title">{props.movie.title}</div>
             <div className="release-year">{new Date(props.movie.release_date).getFullYear()}</div>
         </div>
         <div className="genres">{props.movie.genres.join(', ')}</div>
-    </div>
+    </Link>
     </>
   )
 }

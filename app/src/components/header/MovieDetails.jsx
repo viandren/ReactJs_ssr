@@ -8,24 +8,9 @@ import { useParams } from 'react-router-dom';
 export default function MovieDetails( props ) {
 
 
-    const { movieId } = useParams();
-
-    const fetchData = async () => {
-        const response = await fetch('http://localhost:4000/movies/' + movieId );
-        if (!response.ok) {
-          throw new Error('Network response was not ok');
-        }
-        
-        console.log('movie data fetched with id: ' + movieId)
-        return response.json();
-      }
+const data = props.movie;
       
-    
-      const {  isLoading, isError, data, error } = useQuery(['data', movieId], fetchData);
 
-
-  if (isLoading) return "Loading...";
-  if (error) return "An error has occurred: " + error.message;
 return (
     <div className="movie-details" data-testid="movieDetails">
         <img className="details-poster" src={data.poster_path} alt="" />

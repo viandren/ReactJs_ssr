@@ -6,7 +6,7 @@ import { useState } from "react";
 import Navbar from './navbar/Navbar.jsx';
 import Results from './results/Results.jsx';
 
-import { useSearchParams } from "react-router-dom";
+import { useSearchParams } from "@remix-run/react";
 
 export default function Main(props) {
 
@@ -15,6 +15,7 @@ export default function Main(props) {
   const [selectedSortBy, setSelectedSortBy] = useState(searchParams.get('sortBy') || 'Release Date');
 
   const setFilterByGenre = (genre) => {
+    console.log("genre selected: " + genre);
     setSelectedGenre(genre);
     setSearchParams(searchParams => {
       searchParams.set("genre", genre);
@@ -38,6 +39,7 @@ export default function Main(props) {
     <Results setSelectedMovieId={props.setSelectedMovieId}
             searchByTitle={props.searchByTitle}
           editMovie={props.editMovie}
-          deleteMovie={props.deleteMovie}/>
+          deleteMovie={props.deleteMovie}
+          movieList={props.movieList}/>
     </div>;
 }

@@ -20,36 +20,13 @@ export default function Results(props) {
     setQuery(searchParams.get('query'));
   }, [searchParams]); 
 
-  const fetchData = async () => {
-    const sortByField = sortBy === 'Title' ? 'title' : 'release_date';
-    let queryString = 'sortBy=' + sortByField + '&sortOrder=asc&limit=100';
-    if (filterByGenre !== null && filterByGenre !== 'all') {
-        queryString += '&filter=' + filterByGenre;
-    }
-    if (query !== null && query !== '') {
-        queryString += '&searchBy=title&search=' + query;
-    }
-    console.log('query: ' + queryString)
-    const response = await axios.get('http://localhost:4000/movies?' + queryString);
-    if (response.status !== 200) {
-      console.log('Error: Network response was not ok');
-    }
-    return response.data;
-    
-  }
-
-  const {  isLoading, isError, data } = useQuery(['data', sortBy, filterByGenre, query], fetchData);
-
-  
-  if (isLoading) return "Loading...";
-  if (isError) return "An error has occurred.";
   
 
-  if (data !== undefined) {
+  if (props.movieList !== undefined) {
     return (
         <div className="results" data-testid="results">
-        {data.data.map(function(movie, i){
-        return  <MovieTile movie={data.data[i]} setSelectedMovieId={props.setSelectedMovieId} key={i} 
+        {props.movieList.data.map(function(movie, i){
+        return  <MovieTile movie={props.movieList.data[i]} setSelectedMovieId={props.setSelectedMovieId} key={i} 
         editMovie={props.editMovie} deleteMovie={props.deleteMovie}/>;})
         }
         </div>

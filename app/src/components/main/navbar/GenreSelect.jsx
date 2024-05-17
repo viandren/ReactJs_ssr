@@ -7,6 +7,7 @@ export default function GenreSelect(props) {
 
     const [selected, setSelected] = useState(props.selected);
     const handleClick = genre => {
+        console.log('handleclick');
         props.onSelect(genre);
         setSelected(genre);
       };
